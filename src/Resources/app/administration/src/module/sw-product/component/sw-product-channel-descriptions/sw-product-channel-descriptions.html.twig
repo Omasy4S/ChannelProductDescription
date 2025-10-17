@@ -1,0 +1,13 @@
+{# Карточка с описаниями по каналам #}
+<sw-card title="Описания по каналам" :isLoading="isLoading">
+    <sw-container columns="1fr">
+        {# Для каждой комбинации канал+язык выводим текстовый редактор #}
+        <div v-for="c in combinations" :key="c.fieldName">
+            <sw-text-editor
+                :label="`${c.channel.name} / ${c.language.name}`"
+                :value="getFieldValue(c.fieldName)"
+                @input="updateFieldValue(c.fieldName, $event)">
+            </sw-text-editor>
+        </div>
+    </sw-container>
+</sw-card>

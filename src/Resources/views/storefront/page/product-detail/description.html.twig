@@ -1,0 +1,5 @@
+{# Расширяем стандартный шаблон описания товара #}
+{% sw_extends '@Storefront/storefront/page/product-detail/description.html.twig' %}
+
+{# Выводим описание (уже заменено в ProductPage subscriber) #}
+{% block page_product_detail_description_content_text %}{{ parent() }}{% endblock %}

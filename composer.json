@@ -1,0 +1,32 @@
+{
+    "name": "custom/channel-product-description",
+    "description": "Описания товаров по каналам продаж - DEMO версия",
+    "version": "1.0.0",
+    "type": "shopware-platform-plugin",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Ваше Имя",
+            "email": "your@email.com"
+        }
+    ],
+    "require": {
+        "shopware/core": "~6.5.0|~6.6.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "ChannelProductDescription\\ChannelProductDescription",
+        "label": {
+            "ru-RU": "Описания по каналам (DEMO)",
+            "en-GB": "Channel Descriptions (DEMO)"
+        },
+        "description": {
+            "ru-RU": "Альтернативные описания товаров для каждого канала продаж и языка. ДЕМО-версия с ограничениями.",
+            "en-GB": "Alternative product descriptions per sales channel and language. DEMO version with limitations."
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "ChannelProductDescription\\": "src/"
+        }
+    }
+}
